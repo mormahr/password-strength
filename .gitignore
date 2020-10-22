@@ -1,7 +1,7 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,node,macos,linux,intellij+all,reasonml
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,node,macos,linux,intellij+all,reasonml
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,reasonml,node,macos,linux,intellij+all,ocaml
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,reasonml,node,macos,linux,intellij+all,ocaml
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -246,6 +246,37 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+### OCaml ###
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+
+# ocamlbuild working directory
+_build/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# oasis generated files
+setup.data
+setup.log
+
+# Merlin configuring file for Vim and Emacs
+.merlin
+
+# Dune generated files
+*.install
+
+# Local OPAM switch
+_opam/
+
 ### Reasonml ###
 /lib
 
@@ -262,7 +293,9 @@ dist
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node,macos,linux,intellij+all,reasonml
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,reasonml,node,macos,linux,intellij+all,ocaml
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+# Ignore generated bucklescript files
+*.bs.js

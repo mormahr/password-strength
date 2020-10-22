@@ -1,0 +1,29 @@
+{
+  "name": "@password-strength/generate-keyboard-maps",
+  "version": "1.0.0",
+  "description": "Generate keyboard adjacency graph data for password strength estimation.",
+  "keywords": [
+    "password",
+    "keyboard"
+  ],
+  "author": "Moritz Mahringer <contact@mahringer.dev>",
+  "homepage": "https://github.com/mormahr/password-strength",
+  "license": "ISC",
+  "main": "lib/generate-keyboard-maps.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "bs-platform": "8.3.1"
+  }
+}
